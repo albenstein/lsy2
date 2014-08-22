@@ -1,0 +1,15 @@
+; example.com
+$TTL    604800
+$ORIGIN 3.2.1.in-addr.arpa.
+@       IN      SOA     ns1.example.com. root.example.com. (
+                     2006020210 ; Serial
+                         604800 ; Refresh
+                          86400 ; Retry
+                        2419200 ; Expire
+                         604800); Negative Cache TTL
+;
+@       IN      NS      ns1.example.com.
+4       IN      PTR     ns1.example.com.
+5       IN      PTR     mail.example.com. ; We have our mail server somewhere else.
+6       IN      PTR     www.example.com.
+7       IN      PTR     client1.example.com. ; We connect to client1 very often.

@@ -1,0 +1,32 @@
+use strict;
+
+#
+# Place your configuration directives here.  They will override those in
+# earlier files.
+#
+# See /usr/share/doc/amavisd-new/ for documentation and examples of
+# the directives you can use in this file
+#
+$myhostname="debian.debian.kamplinux.com";
+$mydomain="debian.kamplinux.com";
+$inet_socket_port=10025;
+$forward_method='smtp:[127.0.0.1]:10026';
+$notify_method='smtp:[127.0.0.1]:10026';
+$log_level=2;
+$max_servers=4;
+$enable_db=1;
+$nanny_details_level=2;
+$enable_dkim_verification=1;
+$QUARANTINEDIR=undef;
+#part 2
+$sa_tag_level_deflt=undef;
+$sa_tag2_level_deflt=6.2;
+$sa_kill_level_deflt=6.9;
+$sa_dsn_cutoff_level=undef;
+$sa_crediblefrom_dsn_cutoff_level=undef;
+$final_virus_destiny=D_DISCARD;
+$final_banned_destiny=D_DISCARD;
+$final_spam_destiny=D_PASS;
+$final_bad_header_destiny=D_PASS;
+#------------ Do not modify anything below this line -------------
+1;  # ensure a defined return
